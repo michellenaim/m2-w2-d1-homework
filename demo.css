@@ -52,3 +52,20 @@ header {
     color:rgb(211, 218, 240);
   }
 
+.cards {
+  display: grid;
+  text-align: center;
+}
+
+  @media (max-width: 600px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
